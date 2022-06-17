@@ -1,0 +1,169 @@
+
+Parsing domain file:  domain 'EJ1_DOMINIO_AEROPUERTO' defined ... done.
+Parsing problem file:  problem 'EJ1_PROBLEMA_GRANDE2' defined ... done.
+
+
+
+Modality: Incremental Planner
+
+Number of actions             :    1854
+Number of conditional actions :       0
+Number of facts               :     237
+
+
+Analyzing Planning Problem:
+	Temporal Planning Problem: NO
+	Numeric Planning Problem: NO
+	Problem with Timed Initial Litearals: NO
+	Problem with Derived Predicates: NO
+
+Evaluation function weights:
+     Action duration 0.00; Action cost 1.00
+
+
+Computing mutex... done
+
+Preprocessing total time: 0.04 seconds
+
+Searching ('.' = every 50 search steps):
+........... search limit exceeded. Restart using null plan
+............. search limit exceeded. Restart using null plan
+.... solution found: 
+Solution number: 1
+Total time:      0.58
+Search time:     0.54
+Actions:         76
+Execution cost:  76.00
+Duration:        74.000
+Plan quality:    76.000
+     Plan file:       lpg_problema_output_1_1.SOL Restart using null plan
+........... search limit exceeded. Restart using stored plan
+............. search limit exceeded. Restart using stored plan
+............... search limit exceeded. Restart using null plan
+....... solution found: 
+Solution number: 2
+Total time:      1.60
+Search time:     1.56
+Actions:         68
+Execution cost:  68.00
+Duration:        52.000
+Plan quality:    68.000
+     Plan file:       lpg_problema_output_2_1.SOL Restart using stored plan
+.......... search limit exceeded. Restart using stored plan
+........... search limit exceeded.
+
+Searching ('.' = every 50 search steps):
+.......... found solution of bad quality. Restart using stored plan
+.. found solution of bad quality. Restart using stored plan
+........... search limit exceeded. Restart using null plan
+............. search limit exceeded. Restart using stored plan
+....... found solution of bad quality. Restart using stored plan
+........... search limit exceeded. Restart using null plan
+............. search limit exceeded. Restart using stored plan
+............... search limit exceeded. Restart using stored plan
+..... found solution of bad quality.
+
+Searching ('.' = every 50 search steps):
+.......... search limit exceeded. Restart using stored plan
+........... search limit exceeded. Restart using stored plan
+... found solution of bad quality. Restart using null plan
+.......... search limit exceeded. Restart using stored plan
+........... search limit exceeded. Restart using stored plan
+............. search limit exceeded. Restart using null plan
+............... search limit exceeded. Restart using stored plan
+.................. search limit exceeded. Restart using stored plan
+..................... search limit exceeded.
+
+Searching ('.' = every 50 search steps):
+.......... search limit exceeded. Restart using stored plan
+.... found solution of bad quality. Restart using stored plan
+........... search limit exceeded. Restart using null plan
+............. search limit exceeded. Restart using stored plan
+............... search limit exceeded. Restart using stored plan
+.................. search limit exceeded. Restart using null plan
+..................... search limit exceeded. Restart using stored plan
+........................ search limit exceeded. Restart using stored plan
+............................ search limit exceeded.
+
+Searching ('.' = every 50 search steps):
+.......... search limit exceeded. Restart using stored plan
+.. found solution of bad quality. Restart using stored plan
+..... found solution of bad quality. Restart using null plan
+.... solution found: 
+
+Plan computed:
+   Time: (ACTION) [action Duration; action Cost]
+ 0.0000: (MOVE M2 RECOGIDAEQUIPAJE OFICINAINSPECCION) [D:1.0000; C:1.0000]
+ 1.0000: (MOVE M2 OFICINAINSPECCION P1) [D:1.0000; C:1.0000]
+ 2.0000: (CONNECT M2 M2 V3 P1) [D:1.0000; C:1.0000]
+ 3.0000: (CONNECT M2 V3 V1 P1) [D:1.0000; C:1.0000]
+ 4.0000: (CONNECT M2 V1 V2 P1) [D:1.0000; C:1.0000]
+ 5.0000: (MOVE M2 P1 OFICINAINSPECCION) [D:1.0000; C:1.0000]
+ 6.0000: (MOVE M2 OFICINAINSPECCION RECOGIDAEQUIPAJE) [D:1.0000; C:1.0000]
+ 7.0000: (MOVE M2 RECOGIDAEQUIPAJE P6) [D:1.0000; C:1.0000]
+ 8.0000: (LOAD E3 V3 M2 ZERO N1 P6) [D:1.0000; C:1.0000]
+ 9.0000: (LOAD E4 V3 M2 N1 N2 P6) [D:1.0000; C:1.0000]
+ 10.0000: (MOVE M2 P6 RECOGIDAEQUIPAJE) [D:1.0000; C:1.0000]
+ 11.0000: (UNLOAD_NOTDANGER E4 V3 M2 N2 N1 RECOGIDAEQUIPAJE) [D:1.0000; C:1.0000]
+ 12.0000: (MOVE M2 RECOGIDAEQUIPAJE P6) [D:1.0000; C:1.0000]
+ 13.0000: (MOVE M2 P6 RECOGIDAEQUIPAJE) [D:1.0000; C:1.0000]
+ 14.0000: (MOVE M2 RECOGIDAEQUIPAJE OFICINAINSPECCION) [D:1.0000; C:1.0000]
+ 15.0000: (UNLOAD_DANGER E3 V3 M2 N1 ZERO P8) [D:1.0000; C:1.0000]
+ 16.0000: (ANALYZE E3) [D:1.0000; C:1.0000]
+ 16.0000: (MOVE M2 OFICINAINSPECCION ZONAFACTURACION) [D:1.0000; C:1.0000]
+ 17.0000: (LOAD E10 V2 M2 ZERO N1 ZONAFACTURACION) [D:1.0000; C:1.0000]
+ 18.0000: (LOAD E2 V2 M2 N1 N2 ZONAFACTURACION) [D:1.0000; C:1.0000]
+ 19.0000: (MOVE M2 ZONAFACTURACION OFICINAINSPECCION) [D:1.0000; C:1.0000]
+ 20.0000: (MOVE M2 OFICINAINSPECCION ZONAFACTURACION) [D:1.0000; C:1.0000]
+ 21.0000: (LOAD E7 V3 M2 ZERO N1 ZONAFACTURACION) [D:1.0000; C:1.0000]
+ 22.0000: (MOVE M2 ZONAFACTURACION P2) [D:1.0000; C:1.0000]
+ 23.0000: (LOAD E6 V3 M2 N1 N2 P2) [D:1.0000; C:1.0000]
+ 24.0000: (MOVE M2 P2 ZONAFACTURACION) [D:1.0000; C:1.0000]
+ 25.0000: (MOVE M2 ZONAFACTURACION OFICINAINSPECCION) [D:1.0000; C:1.0000]
+ 26.0000: (UNLOAD_DANGER E6 V3 M2 N2 N1 P8) [D:1.0000; C:1.0000]
+ 27.0000: (LOAD E3 V3 M2 N1 N2 OFICINAINSPECCION) [D:1.0000; C:1.0000]
+ 27.0000: (ANALYZE E6) [D:1.0000; C:1.0000]
+ 28.0000: (MOVE M2 OFICINAINSPECCION RECOGIDAEQUIPAJE) [D:1.0000; C:1.0000]
+ 29.0000: (UNLOAD_NOTDANGER E3 V3 M2 N2 N1 RECOGIDAEQUIPAJE) [D:1.0000; C:1.0000]
+ 30.0000: (MOVE M2 RECOGIDAEQUIPAJE ZONAFACTURACION) [D:1.0000; C:1.0000]
+ 31.0000: (MOVE M2 ZONAFACTURACION P2) [D:1.0000; C:1.0000]
+ 32.0000: (MOVE M2 P2 P4) [D:1.0000; C:1.0000]
+ 33.0000: (UNLOAD_NOTDANGER E7 V3 M2 N1 ZERO P4) [D:1.0000; C:1.0000]
+ 34.0000: (MOVE M2 P4 P2) [D:1.0000; C:1.0000]
+ 35.0000: (MOVE M2 P2 ZONAFACTURACION) [D:1.0000; C:1.0000]
+ 36.0000: (LOAD E8 V3 M2 ZERO N1 ZONAFACTURACION) [D:1.0000; C:1.0000]
+ 37.0000: (LOAD E1 V3 M2 N1 N2 ZONAFACTURACION) [D:1.0000; C:1.0000]
+ 38.0000: (MOVE M2 ZONAFACTURACION P2) [D:1.0000; C:1.0000]
+ 39.0000: (MOVE M2 P2 P4) [D:1.0000; C:1.0000]
+ 40.0000: (UNLOAD_NOTDANGER E1 V3 M2 N2 N1 P4) [D:1.0000; C:1.0000]
+ 41.0000: (UNLOAD_NOTDANGER E8 V3 M2 N1 ZERO P4) [D:1.0000; C:1.0000]
+ 42.0000: (MOVE M2 P4 P2) [D:1.0000; C:1.0000]
+ 43.0000: (MOVE M2 P2 ZONAFACTURACION) [D:1.0000; C:1.0000]
+ 44.0000: (LOAD E9 V3 M2 ZERO N1 ZONAFACTURACION) [D:1.0000; C:1.0000]
+ 45.0000: (MOVE M2 ZONAFACTURACION P2) [D:1.0000; C:1.0000]
+ 46.0000: (LOAD E5 V3 M2 N1 N2 P2) [D:1.0000; C:1.0000]
+ 47.0000: (MOVE M2 P2 ZONAFACTURACION) [D:1.0000; C:1.0000]
+ 48.0000: (MOVE M2 ZONAFACTURACION RECOGIDAEQUIPAJE) [D:1.0000; C:1.0000]
+ 49.0000: (UNLOAD_NOTDANGER E5 V3 M2 N2 N1 RECOGIDAEQUIPAJE) [D:1.0000; C:1.0000]
+ 50.0000: (MOVE M2 RECOGIDAEQUIPAJE OFICINAINSPECCION) [D:1.0000; C:1.0000]
+ 51.0000: (LOAD E6 V3 M2 N1 N2 OFICINAINSPECCION) [D:1.0000; C:1.0000]
+ 52.0000: (MOVE M2 OFICINAINSPECCION P5) [D:1.0000; C:1.0000]
+ 53.0000: (MOVE M2 P5 P7) [D:1.0000; C:1.0000]
+ 54.0000: (MOVE M2 P7 P8) [D:1.0000; C:1.0000]
+ 55.0000: (UNLOAD_NOTDANGER E2 V2 M2 N2 N1 P8) [D:1.0000; C:1.0000]
+ 55.0000: (UNLOAD_NOTDANGER E9 V3 M2 N2 N1 P8) [D:1.0000; C:1.0000]
+ 56.0000: (UNLOAD_NOTDANGER E10 V2 M2 N1 ZERO P8) [D:1.0000; C:1.0000]
+ 57.0000: (MOVE M2 P8 P6) [D:1.0000; C:1.0000]
+ 58.0000: (MOVE M2 P6 RECOGIDAEQUIPAJE) [D:1.0000; C:1.0000]
+ 59.0000: (UNLOAD_NOTDANGER E6 V3 M2 N1 ZERO RECOGIDAEQUIPAJE) [D:1.0000; C:1.0000]
+
+
+Solution number: 3
+Total time:      16.86
+Search time:     16.82
+Actions:         63
+Execution cost:  63.00
+Duration:        60.000
+Plan quality:    63.000
+     Plan file:       lpg_problema_output_3_1.SOL
+

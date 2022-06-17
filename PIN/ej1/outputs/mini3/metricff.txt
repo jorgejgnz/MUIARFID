@@ -1,0 +1,49 @@
+
+ff: parsing domain file
+domain 'EJ1_DOMINIO_AEROPUERTO' defined
+ ... done.
+ff: parsing problem file
+problem 'EJ1_PROBLEMA_MINI3' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:    8 into depth [1][2]
+                                   7            [1]
+                                   6            [1]
+                                   5            [1]
+                                   4            [1][2][3]
+                                   3            [1]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: MOVE MAQ1 LOC1 LOC2
+        1: UNLOAD_NOTDANGER EQUIP3 VAG1 MAQ1 N2 N1 LOC2
+        2: LOAD EQUIP1 VAG1 MAQ1 N1 N2 LOC2
+        3: UNLOAD_NOTDANGER EQUIP2 VAG1 MAQ1 N2 N1 LOC2
+        4: MOVE MAQ1 LOC2 LOC1
+        5: MOVE MAQ1 LOC1 OFICINAINSPECCION
+        6: UNLOAD_DANGER EQUIP1 VAG1 MAQ1 N1 ZERO OFICINAINSPECCION
+        7: ANALYZE EQUIP1
+        8: LOAD EQUIP1 VAG1 MAQ1 ZERO N1 OFICINAINSPECCION
+        9: MOVE MAQ1 OFICINAINSPECCION LOC1
+       10: UNLOAD_NOTDANGER EQUIP1 VAG1 MAQ1 N1 ZERO LOC1
+     
+
+time spent:    0.00 seconds instantiating 275 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 53 facts and 112 actions
+               0.00 seconds creating final representation with 49 relevant facts, 0 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 16 states, to a max depth of 3
+               0.00 seconds total time
+

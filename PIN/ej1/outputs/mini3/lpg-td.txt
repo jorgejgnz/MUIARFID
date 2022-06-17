@@ -1,0 +1,54 @@
+
+Parsing domain file:  domain 'EJ1_DOMINIO_AEROPUERTO' defined ... done.
+Parsing problem file:  problem 'EJ1_PROBLEMA_MINI3' defined ... done.
+
+
+
+Modality: Incremental Planner
+
+Number of actions             :     112
+Number of conditional actions :       0
+Number of facts               :      49
+
+
+Analyzing Planning Problem:
+	Temporal Planning Problem: NO
+	Numeric Planning Problem: NO
+	Problem with Timed Initial Litearals: NO
+	Problem with Derived Predicates: NO
+
+Evaluation function weights:
+     Action duration 0.00; Action cost 1.00
+
+
+Computing mutex... done
+
+Preprocessing total time: 0.00 seconds
+
+Searching ('.' = every 50 search steps):
+ solution found: 
+
+Plan computed:
+   Time: (ACTION) [action Duration; action Cost]
+ 0.0000: (MOVE MAQ1 LOC1 LOC2) [D:1.0000; C:1.0000]
+ 1.0000: (UNLOAD_NOTDANGER EQUIP3 VAG1 MAQ1 N2 N1 LOC2) [D:1.0000; C:1.0000]
+ 2.0000: (LOAD EQUIP1 VAG1 MAQ1 N1 N2 LOC2) [D:1.0000; C:1.0000]
+ 3.0000: (UNLOAD_NOTDANGER EQUIP2 VAG1 MAQ1 N2 N1 LOC2) [D:1.0000; C:1.0000]
+ 4.0000: (MOVE MAQ1 LOC2 LOC1) [D:1.0000; C:1.0000]
+ 5.0000: (MOVE MAQ1 LOC1 OFICINAINSPECCION) [D:1.0000; C:1.0000]
+ 6.0000: (UNLOAD_DANGER EQUIP1 VAG1 MAQ1 N1 ZERO LOC2) [D:1.0000; C:1.0000]
+ 7.0000: (ANALYZE EQUIP1) [D:1.0000; C:1.0000]
+ 8.0000: (LOAD EQUIP1 VAG1 MAQ1 ZERO N1 OFICINAINSPECCION) [D:1.0000; C:1.0000]
+ 9.0000: (MOVE MAQ1 OFICINAINSPECCION LOC1) [D:1.0000; C:1.0000]
+ 10.0000: (UNLOAD_NOTDANGER EQUIP1 VAG1 MAQ1 N1 ZERO LOC1) [D:1.0000; C:1.0000]
+
+
+Solution number: 1
+Total time:      0.00
+Search time:     0.00
+Actions:         11
+Execution cost:  11.00
+Duration:        11.000
+Plan quality:    11.000
+     Plan file:       lpg_problema_output_1_1.SOL
+

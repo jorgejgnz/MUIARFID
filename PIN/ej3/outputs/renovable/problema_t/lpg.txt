@@ -1,0 +1,117 @@
+
+
+NUMERIC_THREATS_MODE: 0
+
+; Command line: ../../PLANIF/lpg -o ./dominio.pddl -f ./problema_t.pddl -n 2 -out ./outputs/renovable/problema_t/lpg   
+
+
+Parsing domain file:  domain 'EJ3_DOMINIO_AEROPUERTO_RENOVABLE' defined ... done.
+Parsing problem file:  problem 'EJ3_PROBLEMA' defined ... done.
+
+
+
+Modality: Incremental Planner
+
+Number of actions             :    1556
+Number of conditional actions :       0
+Number of facts               :     191
+
+
+Analyzing Planning Problem:
+	Temporal Planning Problem: YES
+	Numeric Planning Problem: YES
+	Problem with Timed Initial Literals: NO
+	Problem with Derived Predicates: NO
+
+Evaluation function weights:
+     Action duration 1.00; Action cost 0.00
+
+
+Computing mutex... done
+
+Preprocessing total time: 0.05 seconds
+
+Searching ('.' = every 50 search steps):
+. solution found: 
+ Recompute start times
+
+ first_solution_cpu_time: 0.16 
+Solution number: 1
+Total time:      0.16
+Search time:     0.11
+Actions:         57
+Duration:        831.500
+Plan quality:    831.500 
+Total Num Flips: 76
+     Plan file:       ./outputs/renovable/problema_t/lpg_1_1.SOL Restart using stored plan
+........... search limit exceeded. Restart using stored plan
+.......... solution found: 
+ Recompute start times
+
+
+Plan computed:
+   Time: (ACTION) [action Duration; action Cost]
+ 0.0000: (REFUEL M2 RECOGIDAEQUIPAJE) [D:400.00; C:0.10]
+ 0.0000: (MOVE M1 RECOGIDAEQUIPAJE OFICINAINSPECCION) [D:10.00; C:0.10]
+ 10.0000: (MOVE M1 OFICINAINSPECCION P1) [D:7.50; C:0.10]
+ 17.5000: (CONNECT M1 M1 V3 P1) [D:1.00; C:0.10]
+ 18.5000: (CONNECT M1 V3 V1 P1) [D:1.00; C:0.10]
+ 19.5000: (CONNECT M1 V1 V2 P1) [D:1.00; C:0.10]
+ 20.5000: (MOVE M1 P1 OFICINAINSPECCION) [D:7.50; C:0.10]
+ 28.0000: (MOVE M1 OFICINAINSPECCION RECOGIDAEQUIPAJE) [D:10.00; C:0.10]
+ 38.0000: (MOVE M1 RECOGIDAEQUIPAJE P6) [D:7.50; C:0.10]
+ 45.5000: (LOAD E3 V3 M1 P6) [D:45.00; C:0.10]
+ 90.5000: (MOVE M1 P6 RECOGIDAEQUIPAJE) [D:7.50; C:0.10]
+ 98.0000: (MOVE M1 RECOGIDAEQUIPAJE OFICINAINSPECCION) [D:10.00; C:0.10]
+ 108.0000: (UNLOAD_DANGER E3 V3 M1) [D:45.00; C:0.10]
+ 153.0000: (MOVE M1 OFICINAINSPECCION ZONAFACTURACION) [D:10.00; C:0.10]
+ 153.0000: (ANALYZE E3) [D:3.00; C:0.10]
+ 163.0000: (LOAD E1 V3 M1 ZONAFACTURACION) [D:15.00; C:0.10]
+ 178.0000: (MOVE M1 ZONAFACTURACION P2) [D:7.50; C:0.10]
+ 185.5000: (LOAD E6 V3 M1 P2) [D:45.00; C:0.10]
+ 185.5000: (LOAD E5 V2 M1 P2) [D:30.00; C:0.10]
+ 230.5000: (MOVE M1 P2 P4) [D:5.00; C:0.10]
+ 235.5000: (UNLOAD_NOTDANGER E1 V3 M1 P4) [D:15.00; C:0.10]
+ 250.5000: (MOVE M1 P4 P2) [D:5.00; C:0.10]
+ 255.5000: (MOVE M1 P2 ZONAFACTURACION) [D:7.50; C:0.10]
+ 263.0000: (LOAD E2 V3 M1 ZONAFACTURACION) [D:30.00; C:0.10]
+ 293.0000: (MOVE M1 ZONAFACTURACION OFICINAINSPECCION) [D:10.00; C:0.10]
+ 303.0000: (LOAD E3 V2 M1 OFICINAINSPECCION) [D:45.00; C:0.10]
+ 348.0000: (MOVE M1 OFICINAINSPECCION RECOGIDAEQUIPAJE) [D:10.00; C:0.10]
+ 358.0000: (UNLOAD_NOTDANGER E3 V2 M1 RECOGIDAEQUIPAJE) [D:45.00; C:0.10]
+ 358.0000: (UNLOAD_NOTDANGER E5 V2 M1 RECOGIDAEQUIPAJE) [D:30.00; C:0.10]
+ 403.0000: (MOVE M1 RECOGIDAEQUIPAJE OFICINAINSPECCION) [D:10.00; C:0.10]
+ 413.0000: (UNLOAD_DANGER E6 V3 M1) [D:45.00; C:0.10]
+ 458.0000: (ANALYZE E6) [D:3.00; C:0.10]
+ 461.0000: (LOAD E6 V3 M1 OFICINAINSPECCION) [D:45.00; C:0.10]
+ 506.0000: (MOVE M1 OFICINAINSPECCION P5) [D:7.50; C:0.10]
+ 513.5000: (MOVE M1 P5 OFICINAINSPECCION) [D:7.50; C:0.10]
+ 521.0000: (MOVE M1 OFICINAINSPECCION RECOGIDAEQUIPAJE) [D:10.00; C:0.10]
+ 531.0000: (MOVE M1 RECOGIDAEQUIPAJE ZONAFACTURACION) [D:10.00; C:0.10]
+ 541.0000: (MOVE M1 ZONAFACTURACION OFICINAINSPECCION) [D:10.00; C:0.10]
+ 551.0000: (MOVE M1 OFICINAINSPECCION RECOGIDAEQUIPAJE) [D:10.00; C:0.10]
+ 561.0000: (MOVE M1 RECOGIDAEQUIPAJE OFICINAINSPECCION) [D:10.00; C:0.10]
+ 571.0000: (MOVE M1 OFICINAINSPECCION ZONAFACTURACION) [D:10.00; C:0.10]
+ 581.0000: (MOVE M1 ZONAFACTURACION OFICINAINSPECCION) [D:10.00; C:0.10]
+ 591.0000: (MOVE M1 OFICINAINSPECCION RECOGIDAEQUIPAJE) [D:10.00; C:0.10]
+ 601.0000: (UNLOAD_NOTDANGER E6 V3 M1 RECOGIDAEQUIPAJE) [D:45.00; C:0.10]
+ 646.0000: (MOVE M1 RECOGIDAEQUIPAJE P6) [D:7.50; C:0.10]
+ 653.5000: (LOAD E4 V3 M1 P6) [D:15.00; C:0.10]
+ 668.5000: (MOVE M1 P6 RECOGIDAEQUIPAJE) [D:7.50; C:0.10]
+ 676.0000: (UNLOAD_NOTDANGER E4 V3 M1 RECOGIDAEQUIPAJE) [D:15.00; C:0.10]
+ 691.0000: (MOVE M1 RECOGIDAEQUIPAJE P6) [D:7.50; C:0.10]
+ 698.5000: (MOVE M1 P6 P8) [D:5.00; C:0.10]
+ 703.5000: (UNLOAD_NOTDANGER E2 V3 M1 P8) [D:30.00; C:0.10]
+
+
+
+METRIC_VALUE = 733.50
+Solution number: 2
+Total time:      9.14
+Search time:     9.09
+Actions:         51
+Duration:        733.500
+Plan quality:    733.500 
+Total Num Flips: 1164
+     Plan file:       ./outputs/renovable/problema_t/lpg_2_1.SOL
+

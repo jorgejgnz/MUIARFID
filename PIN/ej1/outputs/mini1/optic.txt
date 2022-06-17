@@ -1,0 +1,41 @@
+,Number of literals: 21
+Constructing lookup tables: [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%] [110%] [120%] [130%] [140%] [150%] [160%] [170%] [180%] [190%]
+Post filtering unreachable actions:  [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%] [110%] [120%] [130%] [140%] [150%] [160%] [170%] [180%] [190%]
+[01;34mNo analytic limits found, not considering limit effects of goal-only operators[00m
+Initial heuristic = 7.000, admissible cost estimate 0.000
+b (5.000 | 0.001)b (4.000 | 0.002)b (3.000 | 0.005)b (2.000 | 0.006)b (1.000 | 0.007)(G)
+; No metric specified - using makespan
+
+; Plan found with metric 0.008
+; States evaluated so far: 13
+; States pruned based on pre-heuristic cost lower bound: 0
+; Time 0.00
+0.000: (move maq1 loc1 loc2)  [0.001]
+0.001: (load equip1 vag1 maq1 zero n1 loc2)  [0.001]
+0.002: (move maq1 loc2 loc1)  [0.001]
+0.003: (move maq1 loc1 oficinainspeccion)  [0.001]
+0.004: (unload_danger equip1 vag1 maq1 n1 zero oficinainspeccion)  [0.001]
+0.005: (analyze equip1)  [0.001]
+0.006: (load equip1 vag1 maq1 zero n1 oficinainspeccion)  [0.001]
+0.007: (move maq1 oficinainspeccion loc1)  [0.001]
+0.008: (unload_notdanger equip1 vag1 maq1 n1 zero loc1)  [0.001]
+
+ * All goal deadlines now no later than 0.008
+
+Resorting to best-first search
+Running WA* with W = 5.000, not restarting with goal states
+b (5.000 | 0.001)b (4.000 | 0.002)b (3.000 | 0.005)b (2.000 | 0.006)b (1.000 | 0.007)(G)b (0.000 | 0.008)
+Problem Unsolvable
+;;;; Solution Found
+; States evaluated: 63
+; Cost: 0.008
+; Time 0.02
+0.000: (move maq1 loc1 loc2)  [0.001]
+0.001: (load equip1 vag1 maq1 zero n1 loc2)  [0.001]
+0.002: (move maq1 loc2 loc1)  [0.001]
+0.003: (move maq1 loc1 oficinainspeccion)  [0.001]
+0.004: (unload_danger equip1 vag1 maq1 n1 zero oficinainspeccion)  [0.001]
+0.005: (analyze equip1)  [0.001]
+0.006: (load equip1 vag1 maq1 zero n1 oficinainspeccion)  [0.001]
+0.007: (move maq1 oficinainspeccion loc1)  [0.001]
+0.008: (unload_notdanger equip1 vag1 maq1 n1 zero loc1)  [0.001]

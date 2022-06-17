@@ -1,0 +1,104 @@
+
+Parsing domain file:  domain 'EJ2_DOMINIO_AEROPUERTO' defined ... done.
+Parsing problem file:  problem 'EJ2_PROBLEMA' defined ... done.
+
+
+
+Modality: Incremental Planner
+
+Number of actions             :    1534
+Number of conditional actions :       0
+Number of facts               :     190
+
+
+Analyzing Planning Problem:
+	Temporal Planning Problem: YES
+	Numeric Planning Problem: YES
+	Problem with Timed Initial Litearals: NO
+	Problem with Derived Predicates: NO
+
+Evaluation function weights:
+     Action duration 1.00; Action cost 0.00
+
+
+Computing mutex... done
+
+Preprocessing total time: 0.06 seconds
+
+Searching ('.' = every 50 search steps):
+.. solution found: 
+Solution number: 1
+Total time:      0.08
+Search time:     0.02
+Actions:         51
+Execution cost:  5.10
+Duration:        1057.000
+Plan quality:    1057.000
+     Plan file:       ./outputs/problema/lpg_1_1.SOL Restart using stored plan
+..... found solution of bad quality. Restart using stored plan
+.. found solution of bad quality. Restart using null plan
+........... search limit exceeded. Restart using stored plan
+............. search limit exceeded. Restart using stored plan
+. solution found: 
+
+Plan computed:
+   Time: (ACTION) [action Duration; action Cost]
+ 0.0000: (MOVE M2 RECOGIDAEQUIPAJE OFICINAINSPECCION) [D:20.0000; C:0.1000]
+ 20.0000: (MOVE M2 OFICINAINSPECCION P1) [D:15.0000; C:0.1000]
+ 35.0000: (CONNECT M2 M2 V1 P1) [D:1.0000; C:0.1000]
+ 36.0000: (MOVE M2 P1 P3) [D:10.0000; C:0.1000]
+ 46.0000: (MOVE M2 P3 P4) [D:10.0000; C:0.1000]
+ 56.0000: (MOVE M2 P4 P2) [D:10.0000; C:0.1000]
+ 66.0000: (LOAD E5 V1 M2 P2) [D:30.0000; C:0.1000]
+ 96.0000: (MOVE M2 P2 ZONAFACTURACION) [D:15.0000; C:0.1000]
+ 111.0000: (LOAD E2 V1 M2 ZONAFACTURACION) [D:30.0000; C:0.1000]
+ 141.0000: (MOVE M2 ZONAFACTURACION RECOGIDAEQUIPAJE) [D:20.0000; C:0.1000]
+ 161.0000: (UNLOAD_NOTDANGER E5 V1 M2 RECOGIDAEQUIPAJE) [D:30.0000; C:0.1000]
+ 191.0000: (MOVE M2 RECOGIDAEQUIPAJE P6) [D:15.0000; C:0.1000]
+ 206.0000: (LOAD E3 V1 M2 P6) [D:45.0000; C:0.1000]
+ 251.0000: (MOVE M2 P6 P8) [D:10.0000; C:0.1000]
+ 261.0000: (UNLOAD_NOTDANGER E2 V1 M2 P8) [D:30.0000; C:0.1000]
+ 291.0000: (MOVE M2 P8 P6) [D:10.0000; C:0.1000]
+ 301.0000: (LOAD E4 V1 M2 P6) [D:15.0000; C:0.1000]
+ 316.0000: (MOVE M2 P6 RECOGIDAEQUIPAJE) [D:15.0000; C:0.1000]
+ 331.0000: (UNLOAD_NOTDANGER E4 V1 M2 RECOGIDAEQUIPAJE) [D:15.0000; C:0.1000]
+ 346.0000: (MOVE M2 RECOGIDAEQUIPAJE P6) [D:15.0000; C:0.1000]
+ 361.0000: (MOVE M2 P6 P8) [D:10.0000; C:0.1000]
+ 371.0000: (MOVE M2 P8 P6) [D:10.0000; C:0.1000]
+ 381.0000: (MOVE M2 P6 RECOGIDAEQUIPAJE) [D:15.0000; C:0.1000]
+ 396.0000: (MOVE M2 RECOGIDAEQUIPAJE OFICINAINSPECCION) [D:20.0000; C:0.1000]
+ 416.0000: (UNLOAD_DANGER E3 V1 M2) [D:45.0000; C:0.1000]
+ 461.0000: (ANALYZE E3) [D:3.0000; C:0.1000]
+ 461.0000: (DISCONNECT M2 M2 V1 OFICINAINSPECCION) [D:1.0000; C:0.1000]
+ 462.0000: (MOVE M2 OFICINAINSPECCION P5) [D:15.0000; C:0.1000]
+ 477.0000: (CONNECT M2 M2 V4 P5) [D:1.0000; C:0.1000]
+ 478.0000: (MOVE M2 P5 OFICINAINSPECCION) [D:15.0000; C:0.1000]
+ 493.0000: (LOAD E3 V4 M2 OFICINAINSPECCION) [D:45.0000; C:0.1000]
+ 538.0000: (MOVE M2 OFICINAINSPECCION ZONAFACTURACION) [D:20.0000; C:0.1000]
+ 558.0000: (MOVE M2 ZONAFACTURACION P2) [D:15.0000; C:0.1000]
+ 573.0000: (LOAD E6 V4 M2 P2) [D:45.0000; C:0.1000]
+ 618.0000: (MOVE M2 P2 ZONAFACTURACION) [D:15.0000; C:0.1000]
+ 633.0000: (MOVE M2 ZONAFACTURACION OFICINAINSPECCION) [D:20.0000; C:0.1000]
+ 653.0000: (UNLOAD_DANGER E6 V4 M2) [D:45.0000; C:0.1000]
+ 698.0000: (ANALYZE E6) [D:3.0000; C:0.1000]
+ 701.0000: (LOAD E6 V4 M2 OFICINAINSPECCION) [D:45.0000; C:0.1000]
+ 746.0000: (MOVE M2 OFICINAINSPECCION RECOGIDAEQUIPAJE) [D:20.0000; C:0.1000]
+ 766.0000: (UNLOAD_NOTDANGER E6 V4 M2 RECOGIDAEQUIPAJE) [D:45.0000; C:0.1000]
+ 766.0000: (UNLOAD_NOTDANGER E3 V4 M2 RECOGIDAEQUIPAJE) [D:45.0000; C:0.1000]
+ 811.0000: (MOVE M2 RECOGIDAEQUIPAJE OFICINAINSPECCION) [D:20.0000; C:0.1000]
+ 831.0000: (MOVE M2 OFICINAINSPECCION ZONAFACTURACION) [D:20.0000; C:0.1000]
+ 851.0000: (LOAD E1 V4 M2 ZONAFACTURACION) [D:15.0000; C:0.1000]
+ 866.0000: (MOVE M2 ZONAFACTURACION P2) [D:15.0000; C:0.1000]
+ 881.0000: (MOVE M2 P2 P4) [D:10.0000; C:0.1000]
+ 891.0000: (UNLOAD_NOTDANGER E1 V4 M2 P4) [D:15.0000; C:0.1000]
+
+
+Solution number: 2
+Total time:      2.40
+Search time:     2.34
+Actions:         48
+Execution cost:  4.80
+Duration:        906.000
+Plan quality:    906.000
+     Plan file:       ./outputs/problema/lpg_2_1.SOL
+

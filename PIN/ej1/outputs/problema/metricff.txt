@@ -1,0 +1,97 @@
+
+ff: parsing domain file
+domain 'EJ1_DOMINIO_AEROPUERTO' defined
+ ... done.
+ff: parsing problem file
+problem 'EJ1_PROBLEMA' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   24 into depth [1][2][3][4][5]
+                                  23            [1][2][3]
+                                  22            [1]
+                                  21            [1]
+                                  20            [1][2][3][4]
+                                  18            [1]
+                                  17            [1][2][3]
+                                  16            [1][2]
+                                  15            [1][2]
+                                  14            [1][2]
+                                  13            [1][2][3]
+                                  12            [1]
+                                  11            [1]
+                                  10            [1][2]
+                                   9            [1]
+                                   8            [1][2]
+                                   7            [1][2][3]
+                                   6            [1]
+                                   5            [1]
+                                   4            [1][2]
+                                   3            [1]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: MOVE M2 RECOGIDAEQUIPAJE OFICINAINSPECCION
+        1: MOVE M2 OFICINAINSPECCION P1
+        2: CONNECT M2 M2 V3 P1
+        3: MOVE M2 P1 OFICINAINSPECCION
+        4: DISCONNECT M2 M2 V3 ZERO OFICINAINSPECCION
+        5: MOVE M1 RECOGIDAEQUIPAJE OFICINAINSPECCION
+        6: CONNECT M1 M1 V3 OFICINAINSPECCION
+        7: MOVE M1 OFICINAINSPECCION ZONAFACTURACION
+        8: LOAD E1 V3 M1 ZERO N1 ZONAFACTURACION
+        9: LOAD E2 V3 M1 N1 N2 ZONAFACTURACION
+       10: MOVE M1 ZONAFACTURACION P2
+       11: MOVE M1 P2 P4
+       12: UNLOAD_NOTDANGER E1 V3 M1 N2 N1 P4
+       13: MOVE M1 P4 P2
+       14: LOAD E5 V3 M1 N1 N2 P2
+       15: MOVE M1 P2 ZONAFACTURACION
+       16: MOVE M1 ZONAFACTURACION RECOGIDAEQUIPAJE
+       17: UNLOAD_NOTDANGER E5 V3 M1 N2 N1 RECOGIDAEQUIPAJE
+       18: MOVE M1 RECOGIDAEQUIPAJE P6
+       19: LOAD E4 V3 M1 N1 N2 P6
+       20: MOVE M1 P6 RECOGIDAEQUIPAJE
+       21: UNLOAD_NOTDANGER E4 V3 M1 N2 N1 RECOGIDAEQUIPAJE
+       22: MOVE M1 RECOGIDAEQUIPAJE P6
+       23: LOAD E3 V3 M1 N1 N2 P6
+       24: MOVE M1 P6 P8
+       25: UNLOAD_NOTDANGER E2 V3 M1 N2 N1 P8
+       26: MOVE M1 P8 P7
+       27: MOVE M1 P7 P5
+       28: MOVE M1 P5 OFICINAINSPECCION
+       29: UNLOAD_DANGER E3 V3 M1 N1 ZERO OFICINAINSPECCION
+       30: ANALYZE E3
+       31: LOAD E3 V3 M1 ZERO N1 OFICINAINSPECCION
+       32: MOVE M1 OFICINAINSPECCION RECOGIDAEQUIPAJE
+       33: UNLOAD_NOTDANGER E3 V3 M1 N1 ZERO RECOGIDAEQUIPAJE
+       34: MOVE M1 RECOGIDAEQUIPAJE ZONAFACTURACION
+       35: MOVE M1 ZONAFACTURACION P2
+       36: LOAD E6 V3 M1 ZERO N1 P2
+       37: MOVE M1 P2 ZONAFACTURACION
+       38: MOVE M1 ZONAFACTURACION OFICINAINSPECCION
+       39: UNLOAD_DANGER E6 V3 M1 N1 ZERO OFICINAINSPECCION
+       40: ANALYZE E6
+       41: LOAD E6 V3 M1 ZERO N1 OFICINAINSPECCION
+       42: MOVE M1 OFICINAINSPECCION RECOGIDAEQUIPAJE
+       43: UNLOAD_NOTDANGER E6 V3 M1 N1 ZERO RECOGIDAEQUIPAJE
+     
+
+time spent:    0.00 seconds instantiating 4358 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 211 facts and 1694 actions
+               0.00 seconds creating final representation with 205 relevant facts, 0 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.02 seconds searching, evaluating 230 states, to a max depth of 5
+               0.02 seconds total time
+

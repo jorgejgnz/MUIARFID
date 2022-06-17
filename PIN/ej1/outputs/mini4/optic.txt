@@ -1,0 +1,42 @@
+,Number of literals: 59
+Constructing lookup tables: [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+Post filtering unreachable actions:  [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+[01;34mNo analytic limits found, not considering limit effects of goal-only operators[00m
+Initial heuristic = 12.000, admissible cost estimate 0.000
+b (11.000 | 0.001)b (9.000 | 0.002)b (8.000 | 0.004)b (7.000 | 0.005)b (6.000 | 0.008)b (5.000 | 0.011)b (4.000 | 0.012)b (3.000 | 0.015)b (2.000 | 0.016)b (1.000 | 0.017)(G)
+; No metric specified - using makespan
+
+; Plan found with metric 0.018
+; States evaluated so far: 89
+; States pruned based on pre-heuristic cost lower bound: 0
+; Time 0.06
+0.000: (move maq1 oficinainspeccion loc1)  [0.001]
+0.000: (move maq2 loc2 loc1)  [0.001]
+0.001: (connect maq1 maq1 vag1 loc1)  [0.001]
+0.001: (move maq2 loc1 oficinainspeccion)  [0.001]
+0.002: (load equip2 vag1 maq1 zero n1 loc1)  [0.001]
+0.002: (move maq2 oficinainspeccion loc1)  [0.001]
+0.003: (move maq1 loc1 loc2)  [0.001]
+0.003: (connect maq2 maq2 vag2 loc1)  [0.001]
+0.004: (move maq2 loc1 loc2)  [0.001]
+0.004: (load equip1 vag1 maq1 n1 n2 loc2)  [0.001]
+0.005: (unload_notdanger equip2 vag1 maq1 n2 n1 loc2)  [0.001]
+0.006: (move maq1 loc2 loc1)  [0.001]
+0.007: (move maq1 loc1 oficinainspeccion)  [0.001]
+0.008: (load equip3 vag1 maq1 n1 n2 oficinainspeccion)  [0.001]
+0.009: (move maq1 oficinainspeccion loc1)  [0.001]
+0.010: (move maq1 loc1 loc2)  [0.001]
+0.011: (unload_notdanger equip3 vag1 maq1 n2 n1 loc2)  [0.001]
+0.012: (move maq1 loc2 loc1)  [0.001]
+0.013: (move maq1 loc1 oficinainspeccion)  [0.001]
+0.014: (unload_danger equip1 vag1 maq1 n1 zero oficinainspeccion)  [0.001]
+0.015: (analyze equip1)  [0.001]
+0.016: (load equip1 vag1 maq1 zero n1 oficinainspeccion)  [0.001]
+0.017: (move maq1 oficinainspeccion loc1)  [0.001]
+0.018: (unload_notdanger equip1 vag1 maq1 n1 zero loc1)  [0.001]
+
+ * All goal deadlines now no later than 0.018
+
+Resorting to best-first search
+Running WA* with W = 5.000, not restarting with goal states
+b (11.000 | 0.001)b (9.000 | 0.002)b (8.000 | 0.004)b (7.000 | 0.007)b (6.000 | 0.008)b (5.000 | 0.009)b (4.000 | 0.010)b (3.000 | 0.011)b (2.000 | 0.012)b (1.000 | 0.013)(G)b (0.000 | 0.013)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)b (0.000 | 0.012)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)b (0.000 | 0.012)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)b (0.000 | 0.011)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)

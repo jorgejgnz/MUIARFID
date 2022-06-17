@@ -1,0 +1,110 @@
+
+
+NUMERIC_THREATS_MODE: 0
+
+; Command line: ../../PLANIF/lpg -o ./dominio.pddl -f ./problema_r_smallburn.pddl -n 2 -out ./outputs/no_renovable/problema_r_smallburn/lpg   
+
+
+Parsing domain file:  domain 'EJ3_DOMINIO_AEROPUERTO_RENOVABLE' defined ... done.
+Parsing problem file:  problem 'EJ3_PROBLEMA' defined ... done.
+
+
+
+Modality: Incremental Planner
+
+Number of actions             :    1534
+Number of conditional actions :       0
+Number of facts               :     190
+
+
+Analyzing Planning Problem:
+	Temporal Planning Problem: NO
+	Numeric Planning Problem: YES
+	Problem with Timed Initial Literals: NO
+	Problem with Derived Predicates: NO
+
+Evaluation function weights:
+     Action duration 0.00; Action cost 1.00
+
+
+Computing mutex... done
+
+Preprocessing total time: 0.04 seconds
+
+Searching ('.' = every 50 search steps):
+........... search limit exceeded. Restart using null plan
+...... solution found: 
+ Recompute start times
+
+ first_solution_cpu_time: 1.38 
+Solution number: 1
+Total time:      1.38
+Search time:     1.34
+Actions:         54
+Duration:        836.500
+Plan quality:    2340.000 
+Total Num Flips: 909
+     Plan file:       ./outputs/no_renovable/problema_r_smallburn/lpg_1_1.SOL Restart using stored plan
+. solution found: 
+ Recompute start times
+
+
+Plan computed:
+   Time: (ACTION) [action Duration; action Cost]
+ 0.0000: (MOVE M1 RECOGIDAEQUIPAJE OFICINAINSPECCION) [D:10.00; C:80.00]
+ 10.0000: (MOVE M1 OFICINAINSPECCION P1) [D:7.50; C:60.00]
+ 17.5000: (MOVE M1 P1 P3) [D:5.00; C:40.00]
+ 22.5000: (MOVE M1 P3 P1) [D:5.00; C:40.00]
+ 27.5000: (CONNECT M1 M1 V1 P1) [D:1.00; C:0.10]
+ 28.5000: (CONNECT M1 V1 V2 P1) [D:1.00; C:0.10]
+ 29.5000: (MOVE M1 P1 P3) [D:5.00; C:40.00]
+ 34.5000: (MOVE M1 P3 P4) [D:5.00; C:40.00]
+ 39.5000: (MOVE M1 P4 P2) [D:5.00; C:40.00]
+ 44.5000: (LOAD E6 V1 M1 P2) [D:45.00; C:0.10]
+ 89.5000: (MOVE M1 P2 ZONAFACTURACION) [D:7.50; C:60.00]
+ 97.0000: (MOVE M1 ZONAFACTURACION OFICINAINSPECCION) [D:10.00; C:80.00]
+ 107.0000: (UNLOAD_DANGER E6 V1 M1) [D:45.00; C:0.10]
+ 152.0000: (ANALYZE E6) [D:3.00; C:0.10]
+ 155.0000: (LOAD E6 V1 M1 OFICINAINSPECCION) [D:45.00; C:0.10]
+ 200.0000: (MOVE M1 OFICINAINSPECCION RECOGIDAEQUIPAJE) [D:10.00; C:80.00]
+ 210.0000: (UNLOAD_NOTDANGER E6 V1 M1 RECOGIDAEQUIPAJE) [D:45.00; C:0.10]
+ 255.0000: (MOVE M1 RECOGIDAEQUIPAJE P6) [D:7.50; C:60.00]
+ 262.5000: (LOAD E3 V1 M1 P6) [D:45.00; C:0.10]
+ 307.5000: (MOVE M1 P6 RECOGIDAEQUIPAJE) [D:7.50; C:60.00]
+ 315.0000: (MOVE M1 RECOGIDAEQUIPAJE OFICINAINSPECCION) [D:10.00; C:80.00]
+ 325.0000: (UNLOAD_DANGER E3 V1 M1) [D:45.00; C:0.10]
+ 370.0000: (ANALYZE E3) [D:3.00; C:0.10]
+ 373.0000: (LOAD E3 V1 M1 OFICINAINSPECCION) [D:45.00; C:0.10]
+ 418.0000: (MOVE M1 OFICINAINSPECCION RECOGIDAEQUIPAJE) [D:10.00; C:80.00]
+ 428.0000: (MOVE M1 RECOGIDAEQUIPAJE P6) [D:7.50; C:60.00]
+ 435.5000: (LOAD E4 V2 M1 P6) [D:15.00; C:0.10]
+ 450.5000: (MOVE M1 P6 RECOGIDAEQUIPAJE) [D:7.50; C:60.00]
+ 458.0000: (UNLOAD_NOTDANGER E3 V1 M1 RECOGIDAEQUIPAJE) [D:45.00; C:0.10]
+ 503.0000: (MOVE M1 RECOGIDAEQUIPAJE ZONAFACTURACION) [D:10.00; C:80.00]
+ 513.0000: (LOAD E1 V1 M1 ZONAFACTURACION) [D:15.00; C:0.10]
+ 528.0000: (MOVE M1 ZONAFACTURACION P2) [D:7.50; C:60.00]
+ 535.5000: (MOVE M1 P2 P4) [D:5.00; C:40.00]
+ 540.5000: (UNLOAD_NOTDANGER E1 V1 M1 P4) [D:15.00; C:0.10]
+ 555.5000: (MOVE M1 P4 P2) [D:5.00; C:40.00]
+ 560.5000: (LOAD E5 V1 M1 P2) [D:30.00; C:0.10]
+ 590.5000: (MOVE M1 P2 ZONAFACTURACION) [D:7.50; C:60.00]
+ 598.0000: (LOAD E2 V1 M1 ZONAFACTURACION) [D:30.00; C:0.10]
+ 628.0000: (MOVE M1 ZONAFACTURACION RECOGIDAEQUIPAJE) [D:10.00; C:80.00]
+ 638.0000: (UNLOAD_NOTDANGER E5 V1 M1 RECOGIDAEQUIPAJE) [D:30.00; C:0.10]
+ 638.0000: (UNLOAD_NOTDANGER E4 V2 M1 RECOGIDAEQUIPAJE) [D:15.00; C:0.10]
+ 668.0000: (MOVE M1 RECOGIDAEQUIPAJE P6) [D:7.50; C:60.00]
+ 675.5000: (MOVE M1 P6 P8) [D:5.00; C:40.00]
+ 680.5000: (UNLOAD_NOTDANGER E2 V1 M1 P8) [D:30.00; C:0.10]
+
+
+
+METRIC_VALUE = 1420.00
+Solution number: 2
+Total time:      1.57
+Search time:     1.53
+Actions:         44
+Duration:        710.500
+Plan quality:    1420.000 
+Total Num Flips: 1005
+     Plan file:       ./outputs/no_renovable/problema_r_smallburn/lpg_2_1.SOL
+

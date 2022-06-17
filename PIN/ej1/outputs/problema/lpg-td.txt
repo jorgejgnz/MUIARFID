@@ -1,0 +1,128 @@
+
+Parsing domain file:  domain 'EJ1_DOMINIO_AEROPUERTO' defined ... done.
+Parsing problem file:  problem 'EJ1_PROBLEMA' defined ... done.
+
+
+
+Modality: Incremental Planner
+
+Number of actions             :    1694
+Number of conditional actions :       0
+Number of facts               :     205
+
+
+Analyzing Planning Problem:
+	Temporal Planning Problem: NO
+	Numeric Planning Problem: NO
+	Problem with Timed Initial Litearals: NO
+	Problem with Derived Predicates: NO
+
+Evaluation function weights:
+     Action duration 0.00; Action cost 1.00
+
+
+Computing mutex... done
+
+Preprocessing total time: 0.04 seconds
+
+Searching ('.' = every 50 search steps):
+........... search limit exceeded. Restart using null plan
+. solution found: 
+Solution number: 1
+Total time:      0.24
+Search time:     0.20
+Actions:         45
+Execution cost:  45.00
+Duration:        43.000
+Plan quality:    45.000
+     Plan file:       lpg_problema_output_1_1.SOL Restart using stored plan
+.... found solution of bad quality. Restart using null plan
+.......... search limit exceeded. Restart using stored plan
+........... search limit exceeded. Restart using stored plan
+.. found solution of bad quality. Restart using null plan
+.......... search limit exceeded. Restart using stored plan
+........... search limit exceeded. Restart using stored plan
+... found solution of bad quality.
+
+Searching ('.' = every 50 search steps):
+.......... search limit exceeded. Restart using stored plan
+.... found solution of bad quality. Restart using stored plan
+.... found solution of bad quality. Restart using null plan
+.......... search limit exceeded. Restart using stored plan
+........... search limit exceeded. Restart using stored plan
+... found solution of bad quality. Restart using null plan
+.......... search limit exceeded. Restart using stored plan
+. solution found: 
+Solution number: 2
+Total time:      2.30
+Search time:     2.26
+Actions:         44
+Execution cost:  44.00
+Duration:        42.000
+Plan quality:    44.000
+     Plan file:       lpg_problema_output_2_1.SOL Restart using stored plan
+... found solution of bad quality.
+
+Searching ('.' = every 50 search steps):
+.......... search limit exceeded. Restart using stored plan
+.. found solution of bad quality. Restart using stored plan
+... found solution of bad quality. Restart using null plan
+........... search limit exceeded. Restart using stored plan
+ solution found: 
+
+Plan computed:
+   Time: (ACTION) [action Duration; action Cost]
+ 0.0000: (MOVE M2 RECOGIDAEQUIPAJE OFICINAINSPECCION) [D:1.0000; C:1.0000]
+ 1.0000: (MOVE M2 OFICINAINSPECCION P5) [D:1.0000; C:1.0000]
+ 2.0000: (CONNECT M2 M2 V4 P5) [D:1.0000; C:1.0000]
+ 3.0000: (CONNECT M2 V4 V5 P5) [D:1.0000; C:1.0000]
+ 4.0000: (MOVE M2 P5 OFICINAINSPECCION) [D:1.0000; C:1.0000]
+ 5.0000: (MOVE M2 OFICINAINSPECCION RECOGIDAEQUIPAJE) [D:1.0000; C:1.0000]
+ 6.0000: (MOVE M2 RECOGIDAEQUIPAJE P6) [D:1.0000; C:1.0000]
+ 7.0000: (LOAD E3 V4 M2 ZERO N1 P6) [D:1.0000; C:1.0000]
+ 8.0000: (MOVE M2 P6 RECOGIDAEQUIPAJE) [D:1.0000; C:1.0000]
+ 9.0000: (MOVE M2 RECOGIDAEQUIPAJE OFICINAINSPECCION) [D:1.0000; C:1.0000]
+ 10.0000: (UNLOAD_DANGER E3 V4 M2 N1 ZERO P8) [D:1.0000; C:1.0000]
+ 11.0000: (ANALYZE E3) [D:1.0000; C:1.0000]
+ 12.0000: (LOAD E3 V4 M2 ZERO N1 OFICINAINSPECCION) [D:1.0000; C:1.0000]
+ 13.0000: (MOVE M2 OFICINAINSPECCION ZONAFACTURACION) [D:1.0000; C:1.0000]
+ 14.0000: (MOVE M2 ZONAFACTURACION P2) [D:1.0000; C:1.0000]
+ 15.0000: (LOAD E6 V4 M2 N1 N2 P2) [D:1.0000; C:1.0000]
+ 16.0000: (MOVE M2 P2 ZONAFACTURACION) [D:1.0000; C:1.0000]
+ 17.0000: (MOVE M2 ZONAFACTURACION OFICINAINSPECCION) [D:1.0000; C:1.0000]
+ 18.0000: (UNLOAD_DANGER E6 V4 M2 N2 N1 P8) [D:1.0000; C:1.0000]
+ 19.0000: (MOVE M2 OFICINAINSPECCION ZONAFACTURACION) [D:1.0000; C:1.0000]
+ 19.0000: (ANALYZE E6) [D:1.0000; C:1.0000]
+ 20.0000: (LOAD E1 V5 M2 ZERO N1 ZONAFACTURACION) [D:1.0000; C:1.0000]
+ 21.0000: (LOAD E2 V5 M2 N1 N2 ZONAFACTURACION) [D:1.0000; C:1.0000]
+ 22.0000: (MOVE M2 ZONAFACTURACION P2) [D:1.0000; C:1.0000]
+ 23.0000: (MOVE M2 P2 P4) [D:1.0000; C:1.0000]
+ 24.0000: (UNLOAD_NOTDANGER E1 V5 M2 N2 N1 P4) [D:1.0000; C:1.0000]
+ 25.0000: (MOVE M2 P4 P2) [D:1.0000; C:1.0000]
+ 26.0000: (LOAD E5 V5 M2 N1 N2 P2) [D:1.0000; C:1.0000]
+ 27.0000: (MOVE M2 P2 ZONAFACTURACION) [D:1.0000; C:1.0000]
+ 28.0000: (MOVE M2 ZONAFACTURACION RECOGIDAEQUIPAJE) [D:1.0000; C:1.0000]
+ 29.0000: (UNLOAD_NOTDANGER E5 V5 M2 N2 N1 RECOGIDAEQUIPAJE) [D:1.0000; C:1.0000]
+ 30.0000: (MOVE M2 RECOGIDAEQUIPAJE OFICINAINSPECCION) [D:1.0000; C:1.0000]
+ 31.0000: (LOAD E6 V5 M2 N1 N2 OFICINAINSPECCION) [D:1.0000; C:1.0000]
+ 32.0000: (MOVE M2 OFICINAINSPECCION RECOGIDAEQUIPAJE) [D:1.0000; C:1.0000]
+ 33.0000: (UNLOAD_NOTDANGER E6 V5 M2 N2 N1 RECOGIDAEQUIPAJE) [D:1.0000; C:1.0000]
+ 33.0000: (UNLOAD_NOTDANGER E3 V4 M2 N1 ZERO RECOGIDAEQUIPAJE) [D:1.0000; C:1.0000]
+ 34.0000: (MOVE M2 RECOGIDAEQUIPAJE P6) [D:1.0000; C:1.0000]
+ 35.0000: (LOAD E4 V5 M2 N1 N2 P6) [D:1.0000; C:1.0000]
+ 36.0000: (MOVE M2 P6 RECOGIDAEQUIPAJE) [D:1.0000; C:1.0000]
+ 37.0000: (UNLOAD_NOTDANGER E4 V5 M2 N2 N1 RECOGIDAEQUIPAJE) [D:1.0000; C:1.0000]
+ 38.0000: (MOVE M2 RECOGIDAEQUIPAJE P6) [D:1.0000; C:1.0000]
+ 39.0000: (MOVE M2 P6 P8) [D:1.0000; C:1.0000]
+ 40.0000: (UNLOAD_NOTDANGER E2 V5 M2 N1 ZERO P8) [D:1.0000; C:1.0000]
+
+
+Solution number: 3
+Total time:      2.88
+Search time:     2.84
+Actions:         43
+Execution cost:  43.00
+Duration:        41.000
+Plan quality:    43.000
+     Plan file:       lpg_problema_output_3_1.SOL
+

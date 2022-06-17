@@ -1,0 +1,98 @@
+,Number of literals: 196
+Constructing lookup tables: [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+Post filtering unreachable actions:  [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+(fuel m1) has a finite upper bound: [-inf,8000.000]
+(total-fuel-used) has a finite lower bound: [0.000,inf]
+(fuel m2) has finite bounds: [8000.000,8000.000]
+Seeing if metric is defined in terms of task vars or a minimal value of makespan
+- Yes it is
+Recognised a monotonic-change-induced limit on -1.000*var6(total-fuel-used)
+- Must be >=  the metric
+[01;31mLooking for achievers for goal index 0, fact (done e1) with fID 79[00m
+ (unload_notdanger e1 v1 m1 p4) (unload_notdanger e1 v2 m1 p4) (unload_notdanger e1 v3 m1 p4) (unload_notdanger e1 v4 m1 p4) (unload_notdanger e1 v5 m1 p4) (unload_notdanger e1 v1 m2 p4) (unload_notdanger e1 v2 m2 p4) (unload_notdanger e1 v3 m2 p4) (unload_notdanger e1 v4 m2 p4) (unload_notdanger e1 v5 m2 p4)
+  Looking at numeric effects of (unload_notdanger e1 v1 m1 p4): 0 and 1
+[01;34mFor limits: literal goal index 0, fact (done e1), could be achieved by operator (unload_notdanger e1 v1 m1 p4), which has a no-known-dominance effect ((elements v1) += -1.000)[00m
+[01;31mLooking for achievers for goal index 1, fact (done e2) with fID 80[00m
+ (unload_notdanger e2 v1 m1 p8) (unload_notdanger e2 v2 m1 p8) (unload_notdanger e2 v3 m1 p8) (unload_notdanger e2 v4 m1 p8) (unload_notdanger e2 v5 m1 p8) (unload_notdanger e2 v1 m2 p8) (unload_notdanger e2 v2 m2 p8) (unload_notdanger e2 v3 m2 p8) (unload_notdanger e2 v4 m2 p8) (unload_notdanger e2 v5 m2 p8)
+  Looking at numeric effects of (unload_notdanger e2 v1 m1 p8): 0 and 1
+[01;34mFor limits: literal goal index 1, fact (done e2), could be achieved by operator (unload_notdanger e2 v1 m1 p8), which has a no-known-dominance effect ((elements v1) += -1.000)[00m
+[01;31mLooking for achievers for goal index 2, fact (done e3) with fID 81[00m
+ (unload_notdanger e3 v1 m1 recogidaequipaje) (unload_notdanger e3 v2 m1 recogidaequipaje) (unload_notdanger e3 v3 m1 recogidaequipaje) (unload_notdanger e3 v4 m1 recogidaequipaje) (unload_notdanger e3 v5 m1 recogidaequipaje) (unload_notdanger e3 v1 m2 recogidaequipaje) (unload_notdanger e3 v2 m2 recogidaequipaje) (unload_notdanger e3 v3 m2 recogidaequipaje) (unload_notdanger e3 v4 m2 recogidaequipaje) (unload_notdanger e3 v5 m2 recogidaequipaje)
+  Looking at numeric effects of (unload_notdanger e3 v1 m1 recogidaequipaje): 0 and 1
+[01;34mFor limits: literal goal index 2, fact (done e3), could be achieved by operator (unload_notdanger e3 v1 m1 recogidaequipaje), which has a no-known-dominance effect ((elements v1) += -1.000)[00m
+[01;31mLooking for achievers for goal index 3, fact (done e4) with fID 82[00m
+ (unload_notdanger e4 v1 m1 recogidaequipaje) (unload_notdanger e4 v2 m1 recogidaequipaje) (unload_notdanger e4 v3 m1 recogidaequipaje) (unload_notdanger e4 v4 m1 recogidaequipaje) (unload_notdanger e4 v5 m1 recogidaequipaje) (unload_notdanger e4 v1 m2 recogidaequipaje) (unload_notdanger e4 v2 m2 recogidaequipaje) (unload_notdanger e4 v3 m2 recogidaequipaje) (unload_notdanger e4 v4 m2 recogidaequipaje) (unload_notdanger e4 v5 m2 recogidaequipaje)
+  Looking at numeric effects of (unload_notdanger e4 v1 m1 recogidaequipaje): 0 and 1
+[01;34mFor limits: literal goal index 3, fact (done e4), could be achieved by operator (unload_notdanger e4 v1 m1 recogidaequipaje), which has a no-known-dominance effect ((elements v1) += -1.000)[00m
+[01;31mLooking for achievers for goal index 4, fact (done e5) with fID 83[00m
+ (unload_notdanger e5 v1 m1 recogidaequipaje) (unload_notdanger e5 v2 m1 recogidaequipaje) (unload_notdanger e5 v3 m1 recogidaequipaje) (unload_notdanger e5 v4 m1 recogidaequipaje) (unload_notdanger e5 v5 m1 recogidaequipaje) (unload_notdanger e5 v1 m2 recogidaequipaje) (unload_notdanger e5 v2 m2 recogidaequipaje) (unload_notdanger e5 v3 m2 recogidaequipaje) (unload_notdanger e5 v4 m2 recogidaequipaje) (unload_notdanger e5 v5 m2 recogidaequipaje)
+  Looking at numeric effects of (unload_notdanger e5 v1 m1 recogidaequipaje): 0 and 1
+[01;34mFor limits: literal goal index 4, fact (done e5), could be achieved by operator (unload_notdanger e5 v1 m1 recogidaequipaje), which has a no-known-dominance effect ((elements v1) += -1.000)[00m
+[01;31mLooking for achievers for goal index 5, fact (done e6) with fID 84[00m
+ (unload_notdanger e6 v1 m1 recogidaequipaje) (unload_notdanger e6 v2 m1 recogidaequipaje) (unload_notdanger e6 v3 m1 recogidaequipaje) (unload_notdanger e6 v4 m1 recogidaequipaje) (unload_notdanger e6 v5 m1 recogidaequipaje) (unload_notdanger e6 v1 m2 recogidaequipaje) (unload_notdanger e6 v2 m2 recogidaequipaje) (unload_notdanger e6 v3 m2 recogidaequipaje) (unload_notdanger e6 v4 m2 recogidaequipaje) (unload_notdanger e6 v5 m2 recogidaequipaje)
+  Looking at numeric effects of (unload_notdanger e6 v1 m1 recogidaequipaje): 0 and 1
+[01;34mFor limits: literal goal index 5, fact (done e6), could be achieved by operator (unload_notdanger e6 v1 m1 recogidaequipaje), which has a no-known-dominance effect ((elements v1) += -1.000)[00m
+Effect 0 gives a metric time-dependent update
+Effect 2 gives a metric time-dependent update
+Effect 4 gives a metric time-dependent update
+Effect 6 gives a metric time-dependent update
+Effect 9 gives a metric time-dependent update
+Assignment numeric effect ((fuel m1) = 8000.000) makes effects on 5 be order-dependent
+Assignment numeric effect ((fuel m2) = 8000.000) makes effects on 7 be order-dependent
+42% of the ground temporal actions in this problem are compression-safe
+Initial heuristic = 45.000, admissible cost estimate 0.000
+b (43.000 | 36.002)b (42.000 | 36.002)b (41.000 | 66.002)b (40.000 | 66.002)b (39.000 | 66.002)b (35.000 | 98.503)b (34.000 | 98.503)b (33.000 | 143.502)b (32.000 | 143.502)b (31.000 | 161.004)b (29.000 | 191.004)b (25.000 | 256.004)b (24.000 | 256.004)b (23.000 | 256.004)b (22.000 | 278.504)b (21.000 | 308.504)b (20.000 | 331.005)b (19.000 | 349.505)b (18.000 | 402.005)b (17.000 | 402.006)b (16.000 | 412.005)b (15.000 | 412.006)b (14.000 | 457.005)b (13.000 | 457.006)b (10.000 | 504.506)b (9.000 | 504.507)b (8.000 | 512.007)b (7.000 | 512.008)b (6.000 | 570.009)b (5.000 | 615.010)b (4.000 | 615.011)b (3.000 | 625.010)b (2.000 | 625.011)b (1.000 | 670.010)(G)
+; LP calculated the cost
+
+; Plan found with metric 2960.000
+; Theoretical reachable cost 2960.000
+; States evaluated so far: 416
+; States pruned based on pre-heuristic cost lower bound: 0
+; Time 1.10
+0.000: (move m1 recogidaequipaje oficinainspeccion)  [10.000]
+10.001: (move m1 oficinainspeccion p1)  [7.500]
+17.501: (connect m1 m1 v1 p1)  [1.000]
+18.501: (move m1 p1 oficinainspeccion)  [7.500]
+26.002: (move m1 oficinainspeccion zonafacturacion)  [10.000]
+36.002: (load e2 v1 m1 zonafacturacion)  [30.000]
+36.002: (load e1 v1 m1 zonafacturacion)  [15.000]
+66.002: (move m1 zonafacturacion p2)  [7.500]
+73.503: (move m1 p2 p4)  [5.000]
+78.503: (unload_notdanger e1 v1 m1 p4)  [15.000]
+93.503: (move m1 p4 p2)  [5.000]
+98.503: (load e6 v1 m1 p2)  [45.000]
+98.503: (load e5 v1 m1 p2)  [30.000]
+143.503: (move m1 p2 zonafacturacion)  [7.500]
+151.004: (move m1 zonafacturacion recogidaequipaje)  [10.000]
+161.004: (unload_notdanger e5 v1 m1 recogidaequipaje)  [30.000]
+191.004: (move m1 recogidaequipaje oficinainspeccion)  [10.000]
+201.004: (unload_danger e6 v1 m1)  [45.000]
+246.004: (move m1 oficinainspeccion recogidaequipaje)  [10.000]
+246.005: (analyze e6)  [3.000]
+256.005: (move m1 recogidaequipaje p6)  [7.500]
+263.505: (load e4 v1 m1 p6)  [15.000]
+263.505: (load e3 v1 m1 p6)  [45.000]
+308.505: (move m1 p6 recogidaequipaje)  [7.500]
+316.005: (unload_notdanger e4 v1 m1 recogidaequipaje)  [15.000]
+331.005: (move m1 recogidaequipaje oficinainspeccion)  [10.000]
+341.006: (move m1 oficinainspeccion p5)  [7.500]
+348.506: (connect m1 v1 v4 p5)  [1.000]
+349.506: (move m1 p5 oficinainspeccion)  [7.500]
+357.006: (load e6 v4 m1 oficinainspeccion)  [45.000]
+402.006: (move m1 oficinainspeccion recogidaequipaje)  [10.000]
+412.006: (unload_notdanger e6 v4 m1 recogidaequipaje)  [45.000]
+457.006: (move m1 recogidaequipaje p6)  [7.500]
+464.507: (move m1 p6 p8)  [5.000]
+469.507: (unload_notdanger e2 v1 m1 p8)  [30.000]
+499.507: (move m1 p8 p6)  [5.000]
+504.508: (move m1 p6 recogidaequipaje)  [7.500]
+512.009: (move m1 recogidaequipaje oficinainspeccion)  [10.000]
+522.009: (unload_danger e3 v1 m1)  [45.000]
+567.010: (analyze e3)  [3.000]
+570.011: (load e3 v1 m1 oficinainspeccion)  [45.000]
+615.011: (move m1 oficinainspeccion recogidaequipaje)  [10.000]
+625.011: (unload_notdanger e3 v1 m1 recogidaequipaje)  [45.000]
+
+Resorting to best-first search
+Running WA* with W = 5.000, not restarting with goal states
+b (43.000 | 33.503)b (42.000 | 33.503)b (41.000 | 78.503)b (41.000 | 63.503)b (40.000 | 78.503)b (40.000 | 71.003)b (39.000 | 71.004)b (38.000 | 108.503)b (38.000 | 96.006)b (37.000 | 136.006)b (37.000 | 121.006)b (36.000 | 136.006)b (35.000 | 136.006)b (34.000 | 173.506)b (33.000 | 258.509)b (27.000 | 263.509)b (26.000 | 263.509)b (25.000 | 271.009)b (24.000 | 271.010)b (23.000 | 301.009)b (17.000 | 358.512)b (16.000 | 358.512)b (15.000 | 403.512)b (14.000 | 403.512)b (13.000 | 411.012)b (12.000 | 411.012)b (11.000 | 469.014)b (10.000 | 514.014)b (9.000 | 514.015)b (9.000 | 514.014)b (8.000 | 517.018)b (7.000 | 517.018)b (6.000 | 517.018)b (5.000 | 527.018)
